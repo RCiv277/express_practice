@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% data.forEach(function(idx) { %>
+      <h1><%= idx.Name %></h1>
+      <h2><%= idx.Class %></h2> 
+    <% if(idx.Status === true) { %>
+    <h2>In use</h2>
+    <% } else { %>
+    <h2>Unused</h2>
+    <% }})%>
+    <button><a href="new">Add a Character</a></button>
+  </body>
+</html>
